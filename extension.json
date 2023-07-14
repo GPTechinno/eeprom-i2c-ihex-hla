@@ -2,7 +2,7 @@
   "name": "EEPROM I2C to iHex converter",
   "apiVersion": "1.0.0",
   "author": "GPTechinno",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "EEPROM I2C to iHex converter",
   "extensions": {
     "EEPROM I2C to iHex converter": {
