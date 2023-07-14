@@ -140,8 +140,8 @@ class Hla(HighLevelAnalyzer):
         elif frame.type == 'stop':
             if not self._for_us:
                 return
-            if self._address == self.last_address:
+            if self._address == self.last_address and self._read:
                 print()
-                print("---------- EEPROM iHex ----------")
+                print(f"---------- EEPROM @0x{int(self.eep_i2c_addr):02X} iHex ----------")
                 print(self._eep_data.to_str())
-                print("---------------------------------")
+                print("---------------------------------------")
